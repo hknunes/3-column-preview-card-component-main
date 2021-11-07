@@ -1,0 +1,140 @@
+/*RESETS*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/**/
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+$font-big: "Big Shoulders Display", cursive;
+$font-lexend: "Lexend Deca", sans-serif;
+
+$orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+
+$transparent-white: hsla(0, 0%, 100%, 0.75); //paragraphs
+$light-gray: hsl(0, 0%, 95%);
+
+$font-size-base: 15px;
+
+$font-regular: 400;
+$font-bold: 700;
+
+body {
+  background-color: $light-gray;
+  font-family: $font-lexend;
+  font-size: $font-size-base;
+  font-weight: $font-regular;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button {
+  background-color: $light-gray;
+  border: 2px solid $light-gray;
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-family: $font-lexend;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  max-width: 70vw;
+  min-height: 55vh;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.column {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  &-one {
+    background-color: $orange;
+
+    button {
+      color: $orange;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $orange;
+        color: $light-gray;
+      }
+    }
+  }
+
+  &-two {
+    background-color: $dark-cyan;
+
+    button {
+      color: $dark-cyan;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $dark-cyan;
+        color: $light-gray;
+      }
+    }
+  }
+
+  &-three {
+    background-color: $very-dark-cyan;
+
+    button {
+      color: $very-dark-cyan;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $very-dark-cyan;
+        color: $light-gray;
+      }
+    }
+  }
+
+  &__icon {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-family: $font-big;
+    font-size: 20px;
+    font-weight: $font-bold;
+    color: $light-gray;
+    margin-bottom: 24px;
+    text-align: left;
+  }
+
+  &__text {
+    color: $transparent-white;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+  }
+
+  &__button {
+    height: 100%;
+    display: flex;
+    button{
+      align-self: flex-end;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    max-width: 90vw;
+    margin: 90px 0;
+  }
+}

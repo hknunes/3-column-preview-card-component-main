@@ -1,0 +1,153 @@
+/*RESETS*/
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/**/
+body {
+  background-color: #f2f2f2;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+button {
+  background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 70vw;
+  min-height: 55vh;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.column {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 300px;
+}
+
+.column-one {
+  background-color: #e38826;
+}
+
+.column-one button {
+  color: #e38826;
+  cursor: pointer;
+}
+
+.column-one button:hover {
+  background-color: #e38826;
+  color: #f2f2f2;
+}
+
+.column-two {
+  background-color: #006970;
+}
+
+.column-two button {
+  color: #006970;
+  cursor: pointer;
+}
+
+.column-two button:hover {
+  background-color: #006970;
+  color: #f2f2f2;
+}
+
+.column-three {
+  background-color: #004241;
+}
+
+.column-three button {
+  color: #004241;
+  cursor: pointer;
+}
+
+.column-three button:hover {
+  background-color: #004241;
+  color: #f2f2f2;
+}
+
+.column__icon {
+  margin-bottom: 20px;
+}
+
+.column__title {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 20px;
+  font-weight: 700;
+  color: #f2f2f2;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.column__text {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.4;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+
+.column__button {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column__button button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 90vw;
+    margin: 90px 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
